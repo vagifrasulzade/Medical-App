@@ -1,0 +1,663 @@
+export const HOSPITALS = [
+
+  // 🟢 Public
+
+  {
+    id: 1,
+    name: "Yeni Klinika",
+    category: "Public",
+    address: "142 Heydar Aliyev Ave, Baku",
+    phone: "0125056231",
+    photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerJdxKQTMHkXFV0vgu4YZnLHbRH_AwCbK8KeEQ1oskwSysKz9R89NJnvG00NqY_C9Wwemd7B03N_YfyPp_239kbApfc-pJo6HAARr56FE5Mmju5FcIAwkjHfqZC7SlFMgvnqh1h=w408-h272-k-no",
+    lat: 40.4120785,
+    lng: 49.896392,
+    rating: 3.6,
+    reviewCount: 321,
+    type: "State Hospital",
+    openHours: "24/7",
+    departments: ["Emergency", "Therapy", "Surgery"]
+  },
+
+  {
+    id: 2,
+    name: "Zeferan Hospital",
+    category: "Public",
+    address: "30 Asif Mammadov, Baku",
+    phone: "+994559099977",
+    photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweoLbo0Sld0EFTLAitCjsFQA1ufvk17MybGcoB03L70usM1SS9EXetpq2mu97uEveTOkBT6L3zbBHKIn82SraTEfKMHCcHRtCG3fElKf75shV8u124h-tsx-O3_5f1WlqLDHbi1C=w446-h240-k-no",
+    lat: 40.3986179,
+    lng: 49.8631639,
+    rating: 4.1,
+    reviewCount: 59,
+    type: "Specialized Hospital",
+    openHours: "24/7",
+    departments: ["Cardiology", "Neurology"]
+  },
+
+  {
+    id: 3,
+    name: "Mərkəzi Neftçilər Xəstəxanası",
+    category: "Public",
+    address: "21 Yusif Səfərov küçəsi, Bakı",
+    phone: "+994124970000",
+    photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwery_CfTR0ClUfJhiqKpEsNQkyJJAT-5SkoTY_pgGYT4Z4QtIdWmgHBi9wmBzQeipRB_ikK9vKP89lVpsjRToB7prXu9g2n_i-9ecS89vKYibvyC3Q69PpZSbpVbRhS_HNGUZwDCWA=w408-h725-k-no",
+    lat: 40.3808038,
+    lng: 49.860951,
+    rating: 3.7,
+    reviewCount: 100,
+    type: "General Hospital",
+    openHours: "24/7",
+    departments: ["Surgery", "Internal Medicine"]
+  },
+
+  {
+    id: 4,
+    name: "Lor Hospital",
+    category: "Public",
+    address: "1/25 Ahmad Rajabli, Baku",
+    phone: "+994124960000",
+    photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerinpe4gH2HmxgVk0nG0yWLlcsoCasjaUJlaaK1XGtbHunqC65IpriJH5LjsEHA6N4eaaxMUo20Jqgrr2qsKgYe1MrD-YMV5UzS5-KqLWNUDjWYjbDbuN9ePo0n9FZcoEK_arY=w408-h306-k-no",
+    lat: 40.4096274,
+    lng: 49.8584272,
+    rating: 4.1,
+    reviewCount: 300,
+    type: "Emergency Hospital",
+    openHours: "24/7",
+    departments: ["Emergency", "Trauma"]
+  },
+
+  {
+    id: 5,
+    name: "Sabunchu Medical Center",
+    category: "Public",
+    address: "Sabunchu District, Baku",
+    phone: "+994124990000",
+    photo: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400",
+    lat: 40.4422,
+    lng: 49.9401,
+    rating: 4.3,
+    reviewCount: 270,
+    type: "Medical Center",
+    openHours: "24/7",
+    departments: ["Diagnostics", "Therapy"]
+  },
+
+  {
+    id: 6,
+    name: "Narimanov Medical Center",
+    category: "Public",
+    address: "Narimanov District, Baku",
+    phone: "+994124980000",
+    photo: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=400",
+    lat: 40.4145,
+    lng: 49.8700,
+    rating: 4.4,
+    reviewCount: 230,
+    type: "General Hospital",
+    openHours: "24/7",
+    departments: ["Therapy"]
+  },
+
+  {
+    id: 7,
+    name: "Khatai Medical Center",
+    category: "Public",
+    address: "Khatai District, Baku",
+    phone: "+994124970101",
+    photo: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400",
+    lat: 40.3842,
+    lng: 49.8905,
+    rating: 4.3,
+    reviewCount: 180,
+    type: "Medical Center",
+    openHours: "24/7",
+    departments: ["Emergency"]
+  },
+
+  {
+    id: 8,
+    name: "Binagadi Medical Center",
+    category: "Public",
+    address: "Binagadi District, Baku",
+    phone: "+994124975555",
+    photo: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400",
+    lat: 40.4650,
+    lng: 49.8155,
+    rating: 4.2,
+    reviewCount: 150,
+    type: "Medical Center",
+    openHours: "24/7",
+    departments: ["Diagnostics"]
+  },
+
+  {
+    id: 9,
+    name: "Surakhani Medical Center",
+    category: "Public",
+    address: "Surakhani District, Baku",
+    phone: "+994124970222",
+    photo: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400",
+    lat: 40.4205,
+    lng: 49.9550,
+    rating: 4.2,
+    reviewCount: 140,
+    type: "Medical Center",
+    openHours: "24/7",
+    departments: ["Therapy"]
+  },
+
+  {
+    id: 10,
+    name: "Yasamal Medical Center",
+    category: "Public",
+    address: "Yasamal District, Baku",
+    phone: "+994124970333",
+    photo: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400",
+    lat: 40.4030,
+    lng: 49.8200,
+    rating: 4.3,
+    reviewCount: 165,
+    type: "Medical Center",
+    openHours: "24/7",
+    departments: ["Diagnostics"]
+  },
+  
+  // 🔵 Private
+
+  {
+    id: 11,
+    name: "Baku Medical Plaza",
+    category: "Private",
+    address: "Babek Ave., Baku",
+    phone: "+994125600900",
+    photo: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=400",
+    lat: 40.3920,
+    lng: 49.8750,
+    rating: 4.8,
+    reviewCount: 520,
+    type: "General Hospital",
+    openHours: "24/7",
+    departments: ["Cardiology", "Surgery", "Pediatrics", "Neurology"]
+  },
+
+  {
+    id: 12,
+    name: "Liv Bona Dea Hospital",
+    category: "Private",
+    address: "Ziya Bunyadov Ave., Baku",
+    phone: "+994124041212",
+    photo: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400",
+    lat: 40.4215,
+    lng: 49.8466,
+    rating: 4.9,
+    reviewCount: 410,
+    type: "Multidisciplinary",
+    openHours: "24/7",
+    departments: ["Oncology", "Cardiology"]
+  },
+
+  {
+  id: 13,
+  name: "Referans Medical Group",
+  category: "Private",
+  address: "Narimanov District, Baku",
+  phone: "+994124041010",
+  photo: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400",
+  lat: 40.4090,
+  lng: 49.8675,
+  rating: 4.6,
+  reviewCount: 290,
+  type: "Medical Center",
+  openHours: "08:00 – 20:00",
+  departments: ["Diagnostics", "Therapy"]
+},
+
+{
+  id: 14,
+  name: "Caspian International Hospital",
+  category: "Private",
+  address: "Nasimi District, Baku",
+  phone: "+994125990099",
+  photo: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400",
+  lat: 40.3785,
+  lng: 49.8577,
+  rating: 4.7,
+  reviewCount: 180,
+  type: "International Hospital",
+  openHours: "24/7",
+  departments: ["Cardiology", "Check-up"]
+},
+
+{
+  id: 15,
+  name: "EGE Hospital",
+  category: "Private",
+  address: "38 Academician Hasan Aliyev St, Baku",
+  phone: "+994125700700",
+  photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerc9tWowwqNxTSuAvIcxicVGXpyX-hkYQ_LDCbuo7dTTWJrsKNaTpULdXlqyYva7-TmVxblTbJkNK_e7GYibAscRO207Dg3i_L8L6i_W3nAmSIy0ljgvppuqAn3NRloKXuSimQVsg=w408-h612-k-no",
+  lat: 40.3990934,
+  lng: 49.832856,
+  rating: 3.2,
+  reviewCount: 246,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["Surgery", "Orthopedics"]
+},
+
+{
+  id: 16,
+  name: "German Hospital",
+  category: "Private",
+  address: "İsmayıl Qutqaşınlı, 3 Baku, Azerbaijan 1073",
+  phone: "+994124041818",
+  photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqLn214mXVUMZ20dsuZsmGZmLgy6uMiEezPR-hleiyr26iY-OBROcouc9bj2CbF0hDtGzr6XUxA8USQF8HCGixXZocmjjyORXW753bl44qGFxUfB5GzAE8KaNwy4CaIIqyqKz4=w408-h306-k-no",
+  lat: 40.3695572,
+  lng: 49.8184747,
+  rating: 3.7,
+  reviewCount: 200,
+  type: "Private Clinic",
+  openHours: "24/7",
+  departments: ["Diagnostics", "Surgery"]
+},
+
+{
+  id: 17,
+  name: "Avrasiya Hospital",
+  category: "Private",
+  address: "Yasamal District, Baku",
+  phone: "+994124040777",
+  photo: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400",
+  lat: 40.4010,
+  lng: 49.8700,
+  rating: 4.5,
+  reviewCount: 150,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["General Medicine"]
+},
+
+{
+  id: 18,
+  name: "HB Güven Klinik",
+  category: "Private",
+  address: "Nasimi District, Baku",
+  phone: "+994124040888",
+  photo: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400",
+  lat: 40.4105,
+  lng: 49.8600,
+  rating: 4.4,
+  reviewCount: 130,
+  type: "Clinic",
+  openHours: "09:00 – 18:00",
+  departments: ["Therapy"]
+},
+
+{
+  id: 19,
+  name: "Baku Health Center",
+  category: "Private",
+  address: "Nasibbay Yusifbayli, Baku",
+  phone: "+994124040999",
+  photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepWMXNGWZ3M0vSK03M1-B2idmm_TOkgXBEecFZQ-ZRY6MIafdcPjFmd-YEzVkS-EIUi9dsVCMv1Nhi-UMXszl6YPyFHCQh33wGe7URLKayVOwkAJjUXinhLG0gvuqzjPKNZUzl8YQ=w408-h272-k-no",
+  lat: 40.3985874,
+  lng: 49.8372356,
+  rating: 3.4,
+  reviewCount: 200,
+  type: "Private Hospital",
+  openHours: "09:00 – 14:00",
+  departments: ["Surgery"]
+},
+
+{
+  id: 20,
+  name: "Kliniki Tibbi Mərkəz",
+  category: "Public",
+  address: "1 Mirgasimov, Baku 1078",
+  phone: "+994124041111",
+  photo: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=400",
+  lat: 40.3939086,
+  lng: 49.8285771,
+  rating: 3.0,
+  reviewCount: 160,
+  type: "Public Hospital",
+  openHours: "24/7",
+  departments: ["Diagnostics"]
+},
+{
+  id: 21,
+  name: "Sumqayıt Tibb Mərkəzi - Bakı filialı",
+  category: "Public",
+  address: "Koroğlu metrosu yaxınlığı, Bakı",
+  phone: "+994124972001",
+  photo: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400",
+  lat: 40.4310,
+  lng: 49.9180,
+  rating: 4.3,
+  reviewCount: 110,
+  type: "Medical Center",
+  openHours: "24/7",
+  departments: ["Therapy"]
+},
+
+{
+  id: 22,
+  name: "Qaradağ Tibb Mərkəzi",
+  category: "Public",
+  address: "Lökbatan qəsəbəsi, Bakı",
+  phone: "+994124972002",
+  photo: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400",
+  lat: 40.3330,
+  lng: 49.7330,
+  rating: 4.2,
+  reviewCount: 95,
+  type: "Medical Center",
+  openHours: "24/7",
+  departments: ["Diagnostics"]
+},
+
+{
+  id: 23,
+  name: "Əziz Əliyev adına Dövlət Həkimləri Təkmilləşdirmə İnstitutu Klinikası",
+  category: "Public",
+  address: "Nəsimi rayonu, Bakı",
+  phone: "+994124972003",
+  photo: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400",
+  lat: 40.4055,
+  lng: 49.8610,
+  rating: 4.4,
+  reviewCount: 140,
+  type: "Teaching Hospital",
+  openHours: "24/7",
+  departments: ["Internal Medicine"]
+},
+
+{
+  id: 24,
+  name: "Uşaq Klinik Xəstəxanası",
+  category: "Public",
+  address: "Nəsimi rayonu, Bakı",
+  phone: "+994124972004",
+  photo: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400",
+  lat: 40.4025,
+  lng: 49.8640,
+  rating: 4.5,
+  reviewCount: 180,
+  type: "Children Hospital",
+  openHours: "24/7",
+  departments: ["Pediatrics"]
+},
+
+{
+  id: 25,
+  name: "Doğum Evi №5",
+  category: "Public",
+  address: "Yasamal rayonu, Bakı",
+  phone: "+994124972005",
+  photo: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400",
+  lat: 40.3960,
+  lng: 49.8120,
+  rating: 4.3,
+  reviewCount: 120,
+  type: "Maternity Hospital",
+  openHours: "24/7",
+  departments: ["Maternity"]
+},
+
+// Private Hospitals
+
+{
+  id: 26,
+  name: "MedEra Hospital",
+  category: "Private",
+  address: "Nərimanov rayonu, Bakı",
+  phone: "+994124973001",
+  photo: "https://www.google.com/maps/place/MedEra+Hospital/@40.4163747,49.8415626,3a,114.1y,90t/data=!3m8!1e2!3m6!1sCIABIhA0XV9NszY9babWUiaWLmfh!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAweq7bMTY1I54TGteSzGXZ-HQadyWz1zk013TPqXeAW6Jx_kIptIt73Ara9aQxWOO1n4MZtjcHJR_eVzP1KwgebOtv6DyZ0Q7gtRCHM86HqPcQE6BO1nt-WRk2rGASbiomseULRKFdNyDSzvi%3Dw203-h127-k-no!7i637!8i400!4m7!3m6!1s0x40307d9a1dba80bf:0x75c3a357a5ff838e!8m2!3d40.4164346!4d49.8415373!10e5!16s%2Fg%2F11bz0m35tt?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D#",
+  lat: 40.4100,
+  lng: 49.8730,
+  rating: 4.6,
+  reviewCount: 155,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["General Medicine"]
+},
+
+{
+  id: 27,
+  name: "Atlas Medical Center",
+  category: "Private",
+  address: "Nəsimi rayonu, Bakı",
+  phone: "+994124973002",
+  photo: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400",
+  lat: 40.4065,
+  lng: 49.8580,
+  rating: 4.5,
+  reviewCount: 140,
+  type: "Medical Center",
+  openHours: "09:00 – 19:00",
+  departments: ["Diagnostics"]
+},
+
+{
+  id: 28,
+  name: "Medilux Hospital",
+  category: "Private",
+  address: "Yasamal rayonu, Bakı",
+  phone: "+994124973003",
+  photo: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400",
+  lat: 40.3970,
+  lng: 49.8240,
+  rating: 4.6,
+  reviewCount: 165,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["Surgery"]
+},
+
+{
+  id: 29,
+  name: "Araz Medical Center",
+  category: "Private",
+  address: "Nərimanov rayonu, Bakı",
+  phone: "+994124973004",
+  photo: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400",
+  lat: 40.4155,
+  lng: 49.8780,
+  rating: 4.4,
+  reviewCount: 130,
+  type: "Clinic",
+  openHours: "09:00 – 18:00",
+  departments: ["Therapy"]
+},
+
+{
+  id: 30,
+  name: "Medstar Hospital",
+  category: "Private",
+  address: "Xətai rayonu, Bakı",
+  phone: "+994124973005",
+  photo: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400",
+  lat: 40.3870,
+  lng: 49.8920,
+  rating: 4.5,
+  reviewCount: 145,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["General Medicine"]
+},
+{
+  id: 31,
+  name: "Funda Hospital",
+  category: "Private",
+  address: "Nəsimi rayonu, Bakı",
+  phone: "+994124980111",
+  photo: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400",
+  lat: 40.4050,
+  lng: 49.8655,
+  rating: 4.5,
+  reviewCount: 120,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["Surgery", "Diagnostics"]
+},
+
+{
+  id: 32,
+  name: "Baku Medical Plaza - Medilux Filialı",
+  category: "Private",
+  address: "Nərimanov rayonu, Bakı",
+  phone: "+994125600901",
+  photo: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400",
+  lat: 40.4102,
+  lng: 49.8722,
+  rating: 4.7,
+  reviewCount: 210,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["Cardiology", "Therapy"]
+},
+
+{
+  id: 33,
+  name: "Lux International Hospital",
+  category: "Private",
+  address: "Yasamal rayonu, Bakı",
+  phone: "+994124980222",
+  photo: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400",
+  lat: 40.3988,
+  lng: 49.8225,
+  rating: 4.6,
+  reviewCount: 160,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["General Medicine"]
+},
+
+{
+  id: 34,
+  name: "Istanbul NS Klinik",
+  category: "Private",
+  address: "140 Ataturk avenue, Baku",
+  phone: "+994124980333",
+  photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepZxQEw0_wKua3E0rYHDXauiK-53_n-GqCIyD4dLa-tKYwAzNfGgfTb675wo10dUL612YnxfM2Px-MvUnVomhBwUT40IWtoJpfR4DmmqYYiitnT1qPEMA6nh4N8K04aAP9KWGM=w427-h240-k-no",
+  lat: 40.4127923,
+  lng: 49.8445459,
+  rating: 3.8,
+  reviewCount: 120,
+  type: "Clinic",
+  openHours: "24/7",
+  departments: ["Therapy"]
+},
+
+{
+  id: 35,
+  name: "Universal Hospital",
+  category: "Private",
+  address: "Xətai rayonu, Bakı",
+  phone: "+994124980444",
+  photo: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400",
+  lat: 40.3899,
+  lng: 49.8925,
+  rating: 4.6,
+  reviewCount: 180,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["Diagnostics", "Surgery"]
+},
+
+{
+  id: 36,
+  name: "MedEra Hospital",
+  category: "Private",
+  address: "Nərimanov rayonu, Bakı",
+  phone: "+994124980555",
+  photo: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400",
+  lat: 40.4100,
+  lng: 49.8730,
+  rating: 4.7,
+  reviewCount: 155,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["General Medicine"]
+},
+
+{
+  id: 37,
+  name: "Baku City Hospital",
+  category: "Public",
+  address: "18 Yusif Vəzir Çəmənzəminli, Bakı",
+  phone: "+994505200303",
+  photo: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=400",
+  lat: 40.4019391,
+  lng: 49.8340062,
+  rating: 2.7,
+  reviewCount: 110,
+  type: "State Hospital",
+  openHours: "24/7",
+  departments: ["Emergency", "Therapy", "Surgery"]
+},
+
+{
+  id: 38,
+  name: "DİN Hospitalı",
+  category: "Public",
+  address: "Ziya Bünyadov, Baku",
+  phone: "+994125627773",
+  photo: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwertdEKHqVtJN1hU4JexjLxaqwfB53Rgry2YVDI-2sNJFfrQ8WRxosdjTmQBupRVn6Ld4oPqh9eZBGYdTue3U5TTbu_S0oYCNUipJFVNqSp_JLPZyFqHUfq6exhO4cziQzVa1HtUsw=w408-h306-k-no",
+  lat: 40.4127923,
+  lng: 49.8445459,
+  rating: 4.1,
+  reviewCount: 87,
+  type: "State Hospital",
+  openHours: "24/7",
+  departments: ["Emergency", "Internal Medicine"]
+},
+
+{
+  id: 39,
+  name: "National Primehospital",
+  category: "Private",
+  address: "45 Ərdəbil küçəsi, Bakı",
+  phone: "+994124648787",
+  photo: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=400",
+  lat: 40.4105491,
+  lng: 49.8597098,
+  rating: 4.3,
+  reviewCount: 130,
+  type: "Private Hospital",
+  openHours: "09:00 – 18:00",
+  departments: ["Surgery", "Diagnostics"]
+},
+
+{
+  id: 40,
+  name: "Central Hospital",
+  category: "Public",
+  address: "91 Svetlana Məmmədova, Bakı",
+  phone: "+994557721555",
+  photo: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400",
+  lat: 40.4245616,
+  lng: 49.8287985,
+  rating: 4.1,
+  reviewCount: 88,
+  type: "General Hospital",
+  openHours: "24/7",
+  departments: ["Therapy", "Surgery"]
+},
+
+{
+  id: 41,
+  name: "MediStyle Hospital",
+  category: "Private",
+  address: "18A Əhməd Rəcəbli küçəsi, Bakı",
+  phone: "+994519790000",
+  photo: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400",
+  lat: 40.4070126,
+  lng: 49.8632268,
+  rating: 4.5,
+  reviewCount: 142,
+  type: "Private Hospital",
+  openHours: "24/7",
+  departments: ["Diagnostics", "Therapy"]
+}
+
+];
