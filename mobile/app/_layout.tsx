@@ -16,6 +16,7 @@ export default function RootLayout() {
         <Stack.Screen name="profile-edit" />
         <Stack.Screen name="settings" />
         <Stack.Screen name="notification-settings" />
+        <Stack.Screen name="notifications" />
         <Stack.Screen name="password-manager" />
         <Stack.Screen name="payment" />
         <Stack.Screen name="booking-payment" />
@@ -25,10 +26,6 @@ export default function RootLayout() {
         <Stack.Screen name="help" />
         <Stack.Screen name="faq" />
         <Stack.Screen name="privacy-policy" />
-        <Stack.Screen name="doctor-profile" />
-        <Stack.Screen name="doctor-schedule" />
-        <Stack.Screen name="doctor-appointments" />
-        <Stack.Screen name="doctor-earnings" />
         <Stack.Screen name="(tabs)" />
       </Stack>
     </ThemeProvider>
