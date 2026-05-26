@@ -1,4 +1,4 @@
-# 🏥 Medical App 2
+# 🏥 Medical App 
 
 A React Native (Expo) mobile application for finding doctors and hospitals in Baku, Azerbaijan.
 
